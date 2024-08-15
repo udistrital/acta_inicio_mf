@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "actainiciomf": {
+    "acta_inicio_mf": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/actainiciomf",
+            "outputPath": "dist/acta_inicio_mf",
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
             "polyfills": [
@@ -30,7 +30,7 @@
             "scripts": [],
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "actainiciomf",
+              "libraryName": "acta_inicio_mf",
               "libraryTarget": "umd"
             },
             "deployUrl": "http://localhost:4202/"
@@ -73,10 +73,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "actainiciomf:build:production"
+              "browserTarget": "acta_inicio_mf:build:production"
             },
             "development": {
-              "browserTarget": "actainiciomf:build:development"
+              "browserTarget": "acta_inicio_mf:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "actainiciomf:build"
+            "browserTarget": "acta_inicio_mf:build"
           }
         },
         "test": {

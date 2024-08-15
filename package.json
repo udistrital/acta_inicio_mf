@@ -1,5 +1,5 @@
 {
-  "name": "actainiciomf",
+  "name": "acta_inicio_mf",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,16 +7,18 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:single-spa:actainiciomf": "ng build actainiciomf --configuration production",
-    "serve:single-spa:actainiciomf": "ng s --project actainiciomf --disable-host-check --port 4202 --live-reload false"
+    "build:single-spa:acta_inicio_mf": "ng build acta_inicio_mf --configuration production",
+    "serve:single-spa:acta_inicio_mf": "ng s --project acta_inicio_mf --disable-host-check --port 4202 --live-reload false"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
+    "@angular/cdk": "^16.2.14",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
     "@angular/forms": "^16.2.0",
+    "@angular/material": "^16.2.14",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",

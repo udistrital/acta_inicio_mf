@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'actainiciomf'`, () => {
+  it(`should have as title 'acta_inicio_mf'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('actainiciomf');
+    expect(app.title).toEqual('acta_inicio_mf');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('actainiciomf app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('acta_inicio_mf app is running!');
   });
 });
