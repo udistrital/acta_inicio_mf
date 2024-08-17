@@ -4,7 +4,7 @@ import { RegistroActasComponent } from './modules/registro-actas/registro-actas.
 
 const routes: Routes = [
   {
-    path:"registrar-contrato",
+    path:"registro-actas",
     component: RegistroActasComponent
   }
 ];
