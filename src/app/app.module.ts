@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistroActasModule } from './modules/registro-actas/registro-actas.module';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { GestionContractualCrudService } from './services/gestion-contractual-crud.service';
+import { TercerosCrudService } from './services/tercero-crud.service';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -11,9 +15,13 @@ import { RegistroActasModule } from './modules/registro-actas/registro-actas.mod
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RegistroActasModule
+    RegistroActasModule,
+    MatSnackBarModule
   ],
   providers: [
+    GestionContractualCrudService,
+    TercerosCrudService,
+    UserService
 
   ],
   bootstrap: [

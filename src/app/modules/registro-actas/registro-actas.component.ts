@@ -63,6 +63,7 @@ export class RegistroActasComponent implements OnInit {
     }
   
     const actaInicioData = this.form.value;
+    console.log('Datos del formulario:', actaInicioData); // Verifica que los datos se están capturando correctamente
   
     this.gestionContractualService.post('actas-inicio', actaInicioData).subscribe(
       (response) => {
@@ -74,5 +75,6 @@ export class RegistroActasComponent implements OnInit {
         console.error('Error al registrar el acta de inicio:', error);
       }
     );
-  }  
+  }
+  
 }
