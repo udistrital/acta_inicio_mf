@@ -61,9 +61,9 @@ export class RegistroActasComponent implements OnInit {
       this.snackBar.open('Complete todos los campos obligatorios', 'Cerrar', { duration: 2000 });
       return;
     }
-
+  
     const actaInicioData = this.form.value;
-
+  
     this.gestionContractualService.post('actas-inicio', actaInicioData).subscribe(
       (response) => {
         this.snackBar.open('Acta de inicio registrada correctamente', 'Cerrar', { duration: 2000 });
@@ -74,5 +74,5 @@ export class RegistroActasComponent implements OnInit {
         console.error('Error al registrar el acta de inicio:', error);
       }
     );
-  }
+  }  
 }
