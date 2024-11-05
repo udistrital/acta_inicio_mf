@@ -54,7 +54,8 @@
         </mat-form-field>
         <h3>Objeto</h3>
         <mat-form-field appearance="fill" class="full-width">
-            <textarea matInput formControlName="objeto" rows="3" placeholder="Descripción Objeto de Contrato"></textarea>
+            <textarea matInput formControlName="objeto" rows="3"
+                placeholder="Descripción Objeto de Contrato"></textarea>
         </mat-form-field>
         <h3>Póliza</h3>
         <div class="form-grid3">
@@ -112,4 +113,5 @@
             </mat-form-field>
         </div>
     </div>
+    <button mat-raised-button color="primary" (click)="registrarActaInicio()">Registrar Acta</button>
 </form>
