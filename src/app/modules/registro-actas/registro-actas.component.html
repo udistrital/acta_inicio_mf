@@ -4,19 +4,21 @@
         <mat-form-field>
             <mat-label>Vigencia</mat-label>
             <mat-select formControlName="vigencia">
-                <!--<mat-option *ngFor="let  of " [value]=".Id">
-                    {{.Nombre}}
-                </mat-option>-->
+                <!-- Opciones de ejemplo -->
+                <mat-option [value]="'2023'">2023</mat-option>
+                <mat-option [value]="'2024'">2024</mat-option>
             </mat-select>
         </mat-form-field>
+        
         <mat-form-field>
             <mat-label>Consecutivo Contrato</mat-label>
             <mat-select formControlName="consecutivoContrato">
-                <!--<mat-option *ngFor="let  of " [value]=".Id">
-                    {{.Nombre}}
-                </mat-option>-->
+                <!-- Opciones de ejemplo -->
+                <mat-option [value]="'CON-001'">CON-001</mat-option>
+                <mat-option [value]="'CON-002'">CON-002</mat-option>
             </mat-select>
         </mat-form-field>
+        
         <mat-form-field>
             <mat-label>Fecha Suscripción</mat-label>
             <input matInput [matDatepicker]="pickerSuscripcion" formControlName="fechaSuscripcion">

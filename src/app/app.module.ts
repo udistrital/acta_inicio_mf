@@ -7,6 +7,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GestionContractualCrudService } from './services/gestion-contractual-crud.service';
 import { TercerosCrudService } from './services/tercero-crud.service';
 import { UserService } from './services/user.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserService } from './services/user.service';
     BrowserModule,
     AppRoutingModule,
     RegistroActasModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [
     GestionContractualCrudService,

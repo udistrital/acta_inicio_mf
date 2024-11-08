@@ -7,20 +7,13 @@ import { RequestManager } from '../managers/requestManager';
 export class GestionContractualCrudService {
 
     constructor(private requestManager: RequestManager) {
-        // Llama directamente a setPath con el nombre de la variable del entorno
         this.requestManager.setPath("GESTION_CONTRACTUAL_CRUD_SERVICE");
     }
 
-    // Método para obtener información de un contrato por ID
-    getContratoPorId(contratoId: number) {
-        const endpoint = `contrato/${contratoId}`;
-        return this.get(endpoint);
-    }
-
-    // Método para obtener todos los contratos activos
-    getContratosActivos() {
-        const endpoint = `contratos/?query=activo:true`;
-        return this.get(endpoint);
+    // Método para registrar un acta de inicio
+    registrarActaInicio(data: any) {
+        const endpoint = `acta_inicio`;
+        return this.post(endpoint, data);
     }
 
     // Método genérico GET
