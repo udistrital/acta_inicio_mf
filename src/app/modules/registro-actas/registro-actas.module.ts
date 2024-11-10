@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GestionContractualCrudService } from 'src/app/services/gestion-contractual-crud.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule,
+  ],
+  providers: [
+    GestionContractualCrudService // Agrega el servicio aquí
   ]
 })
 export class RegistroActasModule { }
