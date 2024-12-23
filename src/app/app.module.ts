@@ -10,24 +10,15 @@ import { UserService } from './services/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RegistroActasModule,
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
-  providers: [
-    GestionContractualCrudService,
-    TercerosCrudService,
-    UserService
-
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+  providers: [GestionContractualCrudService, TercerosCrudService, UserService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
