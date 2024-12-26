@@ -9,24 +9,13 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GestionContractualCrudService } from 'src/app/services/gestion-contractual-crud.service';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    RegistroActasComponent
-  ],
-  imports: [
-    CommonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
+  declarations: [RegistroActasComponent],
+  imports: [CommonModule, SharedModule],
   providers: [
-    GestionContractualCrudService // Agrega el servicio aquí
-  ]
+    GestionContractualCrudService, // Agrega el servicio aquí
+  ],
 })
-export class RegistroActasModule { }
+export class RegistroActasModule {}
