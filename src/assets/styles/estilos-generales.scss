@@ -18,6 +18,10 @@
     display: flex;
     justify-content: center !important;
   }
+
+  .width-100-md {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {

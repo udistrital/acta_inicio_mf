@@ -4,7 +4,7 @@ import { SpinnerService } from '../../services/spinner.service';
 @Component({
   selector: 'app-spinner',
   templateUrl: './spinner.component.html',
-  styleUrl: './spinner.component.css',
+  styleUrls: ['./spinner.component.css'],
 })
 export class SpinnerComponent {
   private readonly spinnerSvc = inject(SpinnerService);
