@@ -4,11 +4,14 @@ import { RegistroActasComponent } from './modules/registro-actas/registro-actas.
 import {getSingleSpaExtraProviders} from "single-spa-angular";
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { APP_BASE_HREF } from '@angular/common';
+//import { AuthGuard } from './_guards/auth.guard';
+
 
 const routes: Routes = [
   {
     path:"registrar",
-    component: RegistroActasComponent
+    component: RegistroActasComponent,
+    //canActivate: [AuthGuard]
   }
 ];
 
